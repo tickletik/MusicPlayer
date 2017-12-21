@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         for background in backgrounds {
             background.layer.cornerRadius = 35.0
             background.clipsToBounds = true
-            background.alpha = 0.0
+           // background.alpha = 0.0
         }
     }
 
