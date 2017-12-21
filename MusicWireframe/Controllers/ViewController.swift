@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var isPlaying: Bool = true {
+        didSet {
+            if isPlaying {
+                playPauseButton.setImage(UIImage(named: "pause")!, for: .normal)
+            } else {
+                playPauseButton.setImage(UIImage(named: "play")!, for: .normal)
+            }
+        }
+    }
+    
     @IBOutlet weak var albumImageView: UIView!
     @IBOutlet weak var reverseBackground: UIView!
     @IBOutlet weak var forwardBackground: UIView!
@@ -28,7 +38,7 @@ class ViewController: UIViewController {
         for background in backgrounds {
             background.layer.cornerRadius = 35.0
             background.clipsToBounds = true
-           // background.alpha = 0.0
+            background.alpha = 0.0
         }
     }
 
