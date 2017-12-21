@@ -25,6 +25,14 @@
                                     <constraint firstAttribute="width" secondItem="AfY-kA-dnB" secondAttribute="height" multiplier="1:1" id="if6-6h-qHZ"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFv-nr-Ab5" userLabel="Reverse Background">
+                                <rect key="frame" x="32" y="419" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="cLu-Df-EJH"/>
+                                    <constraint firstAttribute="height" constant="70" id="wZC-0k-ncR"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0Py-Uv-TDm">
                                 <rect key="frame" x="16" y="425" width="343" height="60"/>
                                 <subviews>
@@ -42,21 +50,43 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aF-uR-c94" userLabel="Pause Background">
+                                <rect key="frame" x="152" y="421" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Tkm-Rz-HB4"/>
+                                    <constraint firstAttribute="width" constant="70" id="rWL-kQ-lVz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-q7-bcr" userLabel="Forward Background">
+                                <rect key="frame" x="275" y="419" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="E6E-gY-VkO"/>
+                                    <constraint firstAttribute="width" constant="70" id="ygN-CB-gaE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AfY-kA-dnB" secondAttribute="trailing" id="0BL-U8-21l"/>
+                            <constraint firstItem="jFv-nr-Ab5" firstAttribute="top" secondItem="AfY-kA-dnB" secondAttribute="bottom" constant="24" id="5yI-Su-qur"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Py-Uv-TDm" secondAttribute="trailing" constant="16" id="7Ni-aC-fTt"/>
                             <constraint firstItem="AfY-kA-dnB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LdA-KY-dFe"/>
+                            <constraint firstItem="1aF-uR-c94" firstAttribute="top" secondItem="AfY-kA-dnB" secondAttribute="bottom" constant="26" id="NTv-UJ-07t"/>
                             <constraint firstItem="0Py-Uv-TDm" firstAttribute="top" secondItem="AfY-kA-dnB" secondAttribute="bottom" constant="30" id="V0M-J6-Vkz"/>
                             <constraint firstItem="0Py-Uv-TDm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ekM-HO-OpK"/>
+                            <constraint firstItem="w8G-q7-bcr" firstAttribute="top" secondItem="AfY-kA-dnB" secondAttribute="bottom" constant="24" id="er3-wW-Elj"/>
                             <constraint firstItem="AfY-kA-dnB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hti-MH-ekS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w8G-q7-bcr" secondAttribute="trailing" constant="30" id="oaj-dR-jDJ"/>
+                            <constraint firstItem="jFv-nr-Ab5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uNC-h0-RH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>
