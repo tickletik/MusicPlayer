@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfY-kA-dnB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="native" translatesAutoresizingMaskIntoConstraints="NO" id="AfY-kA-dnB">
                                 <rect key="frame" x="0.0" y="20" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AfY-kA-dnB" secondAttribute="height" multiplier="1:1" id="if6-6h-qHZ"/>
@@ -107,6 +107,7 @@
     </scenes>
     <resources>
         <image name="forward" width="60" height="60"/>
+        <image name="native" width="736" height="736"/>
         <image name="pause" width="60" height="60"/>
         <image name="reverse" width="60" height="60"/>
     </resources>
