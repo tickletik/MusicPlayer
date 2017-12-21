@@ -55,17 +55,27 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW3-nJ-JWX" userLabel="Reverse Button">
                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="60"/>
                                         <state key="normal" image="reverse"/>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="pIu-23-azL"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoV-W2-CGX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdN-Zv-zr1" userLabel="PlayPause Button">
                                         <rect key="frame" x="118.5" y="0.0" width="106" height="60"/>
                                         <state key="normal" image="pause"/>
                                         <connections>
                                             <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBc-6Q-pTF"/>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aI6-cd-KXH"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvd-VR-tla"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-70-LOf" userLabel="Forward Button">
                                         <rect key="frame" x="236.5" y="0.0" width="106.5" height="60"/>
                                         <state key="normal" image="forward"/>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7o9-Lb-mxt"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djw-US-ZEJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

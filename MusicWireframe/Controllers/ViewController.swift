@@ -47,6 +47,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func touchedDown(_ sender: UIButton) {
+    }
+    
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+    }
+    
     @IBAction func playButtonTapped(_ sender: UIButton) {
         if isPlaying {
             UIView.animate(withDuration: 0.5) {
