@@ -36,15 +36,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0Py-Uv-TDm">
                                 <rect key="frame" x="16" y="425" width="343" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW3-nJ-JWX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW3-nJ-JWX" userLabel="Reverse Button">
                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="60"/>
                                         <state key="normal" image="reverse"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdN-Zv-zr1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdN-Zv-zr1" userLabel="PlayPause Button">
                                         <rect key="frame" x="118.5" y="0.0" width="106" height="60"/>
                                         <state key="normal" image="pause"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-70-LOf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-70-LOf" userLabel="Forward Button">
                                         <rect key="frame" x="236.5" y="0.0" width="106.5" height="60"/>
                                         <state key="normal" image="forward"/>
                                     </button>
@@ -83,6 +83,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="AfY-kA-dnB" id="YwW-oy-2Gx"/>
+                        <outlet property="forwardBackground" destination="w8G-q7-bcr" id="CdW-fN-k24"/>
+                        <outlet property="forwardButton" destination="ciH-70-LOf" id="zgc-IB-gW0"/>
+                        <outlet property="playPauseBackground" destination="1aF-uR-c94" id="gfF-f0-Gfb"/>
+                        <outlet property="playPauseButton" destination="CdN-Zv-zr1" id="Rj2-8z-hFs"/>
+                        <outlet property="reverseBackground" destination="jFv-nr-Ab5" id="VV9-ar-6bV"/>
+                        <outlet property="reverseButton" destination="RW3-nJ-JWX" id="IUj-YQ-iOP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

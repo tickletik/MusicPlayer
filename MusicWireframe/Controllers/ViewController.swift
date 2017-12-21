@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var albumImageView: UIView!
+    @IBOutlet weak var reverseBackground: UIView!
+    @IBOutlet weak var forwardBackground: UIView!
+    @IBOutlet weak var playPauseBackground: UIView!
+    
+    @IBOutlet weak var reverseButton: UIButton!
+    @IBOutlet weak var playPauseButton: UIButton!
+    @IBOutlet weak var forwardButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
