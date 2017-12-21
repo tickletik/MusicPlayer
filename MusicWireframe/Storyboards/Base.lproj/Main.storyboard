@@ -25,6 +25,22 @@
                                     <constraint firstAttribute="width" secondItem="AfY-kA-dnB" secondAttribute="height" multiplier="1:1" id="if6-6h-qHZ"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-q7-bcr" userLabel="Forward Background">
+                                <rect key="frame" x="275" y="419" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="E6E-gY-VkO"/>
+                                    <constraint firstAttribute="width" constant="70" id="ygN-CB-gaE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aF-uR-c94" userLabel="Pause Background">
+                                <rect key="frame" x="152" y="421" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Tkm-Rz-HB4"/>
+                                    <constraint firstAttribute="width" constant="70" id="rWL-kQ-lVz"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFv-nr-Ab5" userLabel="Reverse Background">
                                 <rect key="frame" x="32" y="419" width="70" height="70"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,22 +66,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aF-uR-c94" userLabel="Pause Background">
-                                <rect key="frame" x="152" y="421" width="70" height="70"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Tkm-Rz-HB4"/>
-                                    <constraint firstAttribute="width" constant="70" id="rWL-kQ-lVz"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-q7-bcr" userLabel="Forward Background">
-                                <rect key="frame" x="275" y="419" width="70" height="70"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="E6E-gY-VkO"/>
-                                    <constraint firstAttribute="width" constant="70" id="ygN-CB-gaE"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -91,6 +91,9 @@
                         <outlet property="playPauseButton" destination="CdN-Zv-zr1" id="Rj2-8z-hFs"/>
                         <outlet property="reverseBackground" destination="jFv-nr-Ab5" id="VV9-ar-6bV"/>
                         <outlet property="reverseButton" destination="RW3-nJ-JWX" id="IUj-YQ-iOP"/>
+                        <outletCollection property="backgrounds" destination="w8G-q7-bcr" collectionClass="NSMutableArray" id="W3r-rS-Bze"/>
+                        <outletCollection property="backgrounds" destination="1aF-uR-c94" collectionClass="NSMutableArray" id="pT0-2G-p6V"/>
+                        <outletCollection property="backgrounds" destination="jFv-nr-Ab5" collectionClass="NSMutableArray" id="u3m-ZO-foC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
