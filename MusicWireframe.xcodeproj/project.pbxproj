@@ -55,13 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				E357933F1FEBBD13007D1CA3 /* AppDelegate.swift */,
-				E35793411FEBBD13007D1CA3 /* ViewController.swift */,
-				E35793431FEBBD13007D1CA3 /* Main.storyboard */,
+				E35793511FEBBD2B007D1CA3 /* Controllers */,
+				E35793521FEBBD3C007D1CA3 /* Storyboards */,
 				E35793461FEBBD13007D1CA3 /* Assets.xcassets */,
-				E35793481FEBBD13007D1CA3 /* LaunchScreen.storyboard */,
 				E357934B1FEBBD13007D1CA3 /* Info.plist */,
 			);
 			path = MusicWireframe;
+			sourceTree = "<group>";
+		};
+		E35793511FEBBD2B007D1CA3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E35793411FEBBD13007D1CA3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E35793521FEBBD3C007D1CA3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E35793481FEBBD13007D1CA3 /* LaunchScreen.storyboard */,
+				E35793431FEBBD13007D1CA3 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
