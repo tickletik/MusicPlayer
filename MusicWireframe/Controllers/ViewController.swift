@@ -25,14 +25,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        reverseBackground.layer.cornerRadius = 35.0
-        reverseBackground.clipsToBounds = true
-        
-        playPauseBackground.layer.cornerRadius = 35.0
-        playPauseBackground.clipsToBounds = true
-        
-        forwardBackground.layer.cornerRadius = 35.0
-        forwardBackground.clipsToBounds = true
+        for background in backgrounds {
+            background.layer.cornerRadius = 35.0
+            background.clipsToBounds = true
+            background.alpha = 0.0
+        }
     }
 
     override func didReceiveMemoryWarning() {
